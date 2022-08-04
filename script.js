@@ -4,6 +4,7 @@ const emaiL = document.querySelector("#p-email");
 const adD = document.querySelector("#p-address");
 const imgP = document.querySelector("#img-profile");
 const UC = document.querySelector("#div-user-card");
+
 callApi();
 
 async function callApi() {
@@ -12,4 +13,5 @@ async function callApi() {
 
 geneRate.onclick = () => {
   UC.style.display = "none";
+  namE.innerText = resp.data.name;
 };
